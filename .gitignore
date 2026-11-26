@@ -1,0 +1,50 @@
+# ============================================================
+# NEXORA LOGISTICS — .gitignore
+# ============================================================
+
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# next.js build output
+/.next/
+/out/
+next-env.d.ts
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# env files — never commit real secrets
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+dev.log
+dev.out.log
+server.log
+
+# local SQLite database (regenerate with: bun run db:push && bun prisma/seed.ts)
+/db/
+/backups/
+
+# sandbox / local tooling artifacts (not part of the application)
+.zscripts/
+tool-results/
+tests/
+examples/
+mini-services/
+Caddyfile
+
+# editors & platform config
+.claude
+.z-ai-config
+/skills/
+.vercel
